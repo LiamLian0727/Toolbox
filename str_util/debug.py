@@ -27,7 +27,15 @@ def debug_print_tensor_dict(data, str="", indent=2):
     indent_space = ' ' * indent
 
     if indent == 2:
-        debug_print(str)
+        # Get the current stack information
+        stack = inspect.stack()
+        caller_frame = stack[1]
+        filename = caller_frame.filename
+        lineno = caller_frame.lineno
+        function_name = caller_frame.function
+    
+        #  Print the file name, function name, and line number
+        print(f"[{filename}:{lineno}-{function_name}()]: ", str)
         print((' ' * (indent - 2)) + "{")
 
     for key, value in data.items():
@@ -59,7 +67,15 @@ def debug_print_tensor_list(data, str="", indent=2):
     indent_space = ' ' * indent
 
     if indent == 2:
-        debug_print(str)
+        # Get the current stack information
+        stack = inspect.stack()
+        caller_frame = stack[1]
+        filename = caller_frame.filename
+        lineno = caller_frame.lineno
+        function_name = caller_frame.function
+    
+        #  Print the file name, function name, and line number
+        print(f"[{filename}:{lineno}-{function_name}()]: ", str)
         print((' ' * (indent - 2)) + "[")
 
     for key, value in enumerate(data):
