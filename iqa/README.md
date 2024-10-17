@@ -14,7 +14,7 @@ This repository contains Pytorch implementations for evaluating the quality of u
 
 3. **Utility Functions**
    - `sobel_torch(x)`: Performs Sobel edge detection on batch images using PyTorch.
-   - `_uicm(x)`, `_uism(x)`, `_uiconm(x, window_size)`: Helper functions to calculate the UICM, UISM, and UICONM components used in the UIQM calculation.
+   - `_uicm(x), _uism(x), _uiconm(x, window_size)`: Helper functions to calculate the UICM, UISM, and UICONM components used in the UIQM calculation.
 
 ### Example Usage
 
