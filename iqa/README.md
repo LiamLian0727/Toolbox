@@ -1,6 +1,6 @@
 # Underwater Image Quality Metrics Evaluation
 
-This repository contains Python implementations for evaluating the quality of underwater images using different metrics. These metrics help assess image quality based on color, contrast, and sharpness, making them suitable for underwater photography enhancement, marine biology studies, and similar applications.
+This repository contains Pytorch implementations for evaluating the quality of underwater images using different metrics. These metrics help assess image quality based on color, contrast, and sharpness, making them suitable for underwater photography enhancement, marine biology studies, and similar applications.
 
 ## Overview
 
