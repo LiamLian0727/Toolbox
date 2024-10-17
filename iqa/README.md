@@ -51,7 +51,8 @@ To use the functions in this repository, you need the following dependencies:
 
 Install the required libraries using:
 ```sh
-pip install torch torchvision opencv-python-headless kornia pillow
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0
+pip install opencv-python-headless kornia pillow
 ```
 
 ## Applications
